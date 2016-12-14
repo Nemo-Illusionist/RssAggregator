@@ -1,8 +1,13 @@
-﻿using SQLite;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
+using DAL.Entites;
+using SQLite;
 
 namespace DAL
 {
-    public class DBManager
+    public class DBManager : IDBManager
     {
         private readonly SQLiteAsyncConnection _db;
 
@@ -11,9 +16,32 @@ namespace DAL
             _db = new SQLiteAsyncConnection(DBConstant.Name);
         }
 
-        public string GetUrl(string key)
+        public async Task<List<NewsEntites>> GetNews(Expression<Func<NewsEntites, bool>> func)
         {
-            return 
+            if (func == null)
+                throw new ArgumentNullException(nameof(func));
+            return await _db.Table<NewsEntites>().Where(func).ToListAsync();
+        }
+
+        public async Task<UrlEntites> GetUrl(string key)
+        {
+            if (string.IsNullOrEmpty(key))
+                throw new ArgumentNullException(nameof(key));
+            return await _db.Table<UrlEntites>().Where(x => x.UrlName == key).FirstAsync();
+        }
+
+        public async Task AddEntites<T>(T t)
+        {
+            if (t == null)
+                throw new ArgumentNullException(nameof(t));
+            await _db.InsertAsync(t);
+        }
+
+        public async Task AddEntites<T>(IList<T> t)
+        {
+            if (t == null)
+                throw new ArgumentNullException(nameof(t));
+            await _db.InsertAllAsync(t);
         }
 
     }
