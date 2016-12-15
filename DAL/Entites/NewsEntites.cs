@@ -1,4 +1,5 @@
-﻿using SQLite;
+﻿using System;
+using SQLite;
 
 namespace DAL.Entites
 {
@@ -15,5 +16,10 @@ namespace DAL.Entites
 
         [NotNull]
         public string Description { get; set; }
+
+        public DateTime Date { get; set; }
+
+        [NotNull]
+        public bool Read { get; set; } = false;
     }
 }

@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="RSSHabr" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"  &gt;
+&lt;channel&gt;
+	&lt;title&gt;Интересные / Публикации / Хабралента&lt;/title&gt;
+	&lt;link&gt;https://habrahabr.ru/feed/posts/&lt;/link&gt;
+	&lt;description&gt;&lt;![CDATA[Интересные публикации из Хабраленты]]&gt;&lt;/description&gt;
+	&lt;language&gt;ru&lt;/language&gt;
+	&lt;managingEditor&gt;editor@habrahabr.ru&lt;/managingEditor&gt;
+	&lt;generator&gt;habrahabr.ru&lt;/generator&gt;
+	&lt;pubDate&gt;Thu, 15 Dec 2016 19:42:38 GMT&lt;/pubDate&gt;
+	&lt;lastBuildDate&gt;&lt;/lastBuildDate&gt;
+        &lt;image&gt;
+            &lt;link&gt;https://habrahabr.ru/&lt;/link&gt;
+            &lt;url&gt;https://habrahabr.ru/images/logo.png&lt;/url&gt;
+            &lt;title&gt;Хабрахабр&lt;/title&gt;
+        &lt;/image&gt;
+				  &lt;item&gt;
+    &lt;title&gt;&lt;![CDATA[Российское ПО в офисах компаний — текущие реалии и перспективы, мнения и опыт экспертов]]&gt;&lt;/title&gt;
+    &lt;guid isPermaLink="true"&gt;https://habrahabr.ru/post/317718/&lt;/guid&gt;
+    &lt;link&gt;https://habrahabr.ru/post/317718/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts&lt;/link&gt;
+    &lt;description&gt;&lt;![CDATA[&lt;img src="https://habrastorage.org/getpro/habr/post_images/5b6/d5d/606/5b6d5d6064dea316eeb09c6676aa6eb7.jpg" alt="image"/&gt;&lt;br/&gt;
+&lt;br/&gt;
+Большинство ИТ-технологий, средств и методологий разработки программного обеспечения пришли к нам с Запада.&lt;br/&gt;
+&lt;br/&gt;
+В связи с этим российским программистам и инженерам некоторое время пришлось идти позади «паровоза». Однако постепенно мы в чем-то перестали уступать первоисточнику, а где-то даже вышли вперед. Безусловно, проигрывая в коммерческом плане, многие российские разработки незаслуженно забыты или находятся на обочине ИТ-индустрии. Но некоторые продукты все-таки заняли заметное место в мире.&lt;br/&gt;
+&lt;br/&gt;
+Теперь же, с появлением концепции импортозамещения, эта несправедливость может быть частично восстановлена, пусть и в масштабе только одной страны. Однако далеко не все отечественные разработки способны заменить зарубежные аналоги. Здесь и возникает простор для дискуссий, аргументированной критики, надежд на светлое будущее. &lt;br/&gt;
+&lt;br/&gt;
+Мы пообщались с представителями российских компаний и попросили высказать свое отношение по поводу того, что происходит с разработкой российского ПО сейчас. Мы также выяснили, насколько они готовы использовать отечественный софт, и какой софт уже используют в работе. &lt;a href="https://habrahabr.ru/post/317718/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;]]&gt;&lt;/description&gt;
+    
+    &lt;pubDate&gt;Thu, 15 Dec 2016 16:28:00 GMT&lt;/pubDate&gt;
+    &lt;dc:creator&gt;semen_grinshtein&lt;/dc:creator&gt;
+    &lt;category&gt;&lt;![CDATA[Управление разработкой]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Управление продуктом]]&gt;&lt;/category&gt;
+    &lt;category&gt;&lt;![CDATA[импортозамещение]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[разработка по]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[российский софт]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[отечественный производитель]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[конкуренция]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[мнения экспертов]]&gt;&lt;/category&gt;
+  &lt;/item&gt;
+
+	  &lt;item&gt;
+    &lt;title&gt;&lt;![CDATA[Как я побывала на HolyJS Moscow и нужно ли туда ходить]]&gt;&lt;/title&gt;
+    &lt;guid isPermaLink="true"&gt;https://habrahabr.ru/post/317694/&lt;/guid&gt;
+    &lt;link&gt;https://habrahabr.ru/post/317694/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts&lt;/link&gt;
+    &lt;description&gt;&lt;![CDATA[&lt;img src="https://habrastorage.org/files/a50/e6d/dcc/a50e6ddcc0894c0c925177e9022690b1.jpg"/&gt;&lt;br/&gt;
+ &lt;br/&gt;
+В минувшее воскресенье, 11 декабря, мне представилась возможность поучаствовать в &lt;a href="http://holyjs.ru/"&gt;HolyJS Moscow&lt;/a&gt;, грандиозном мероприятии, целиком и полностью посвящённом JavaScript. Количество информации на конференции поражало воображение (не обошлось даже без упоминания других технологий, хотя это логично: в мире веб-разработки всё взаимосвязано), однако из всего массива лично мне запомнилось четыре доклада. Сразу оговорюсь: дело не в том, что другие были лучше или хуже, просто именно эти привлекли моё внимание больше остальных. И здесь я поясню подробно, почему это так.&lt;br/&gt;
+ &lt;a href="https://habrahabr.ru/post/317694/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;]]&gt;&lt;/description&gt;
+    
+    &lt;pubDate&gt;Thu, 15 Dec 2016 15:37:08 GMT&lt;/pubDate&gt;
+    &lt;dc:creator&gt;6thSence&lt;/dc:creator&gt;
+    &lt;category&gt;&lt;![CDATA[Ненормальное программирование]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[JavaScript]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Блог компании Mail.Ru Group]]&gt;&lt;/category&gt;
+    &lt;category&gt;&lt;![CDATA[mail.ru]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[HolyJS Moscow]]&gt;&lt;/category&gt;
+  &lt;/item&gt;
+
+	  &lt;item&gt;
+    &lt;title&gt;&lt;![CDATA[Руководство по выживанию в западной IT компании]]&gt;&lt;/title&gt;
+    &lt;guid isPermaLink="true"&gt;https://habrahabr.ru/post/317710/&lt;/guid&gt;
+    &lt;link&gt;https://habrahabr.ru/post/317710/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts&lt;/link&gt;
+    &lt;description&gt;&lt;![CDATA[&lt;img src="https://habrastorage.org/files/086/ff9/f8d/086ff9f8dbb1435d8346c2ceade0b2a7.jpg"/&gt;&lt;br/&gt;
+&lt;br/&gt;
+Приветствую, читатель! &lt;br/&gt;
+&lt;br/&gt;
+Мой предыдущий &lt;a href="https://habrahabr.ru/post/317654/"&gt;пост&lt;/a&gt;, я уверен, дал достаточно информации, но многие вопросы по переезду и визе остались без ответа, и я хочу это исправить.&lt;br/&gt;
+Я расскажу тебе о процессе обживания и культурных конфликтах с местными.&lt;br/&gt;
+&lt;br/&gt;
+Небольшая ремарка: комментарии вКонтакте достаточно… противоречивы. Чтобы не нагружать тебя бесполезной информацией, я хочу тебя предупредить, что это всего лишь мой опыт, и твой будет разниться.&lt;br/&gt;
+&lt;br/&gt;
+ &lt;a href="https://habrahabr.ru/post/317710/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts#habracut"&gt;И все-таки тебе интересно.&lt;/a&gt;]]&gt;&lt;/description&gt;
+    
+    &lt;pubDate&gt;Thu, 15 Dec 2016 14:30:17 GMT&lt;/pubDate&gt;
+    &lt;dc:creator&gt;v_sadist&lt;/dc:creator&gt;
+    &lt;category&gt;&lt;![CDATA[IT-эмиграция]]&gt;&lt;/category&gt;
+    &lt;category&gt;&lt;![CDATA[иммиграция]]&gt;&lt;/category&gt;
+  &lt;/item&gt;
+
+	  &lt;item&gt;
+    &lt;title&gt;&lt;![CDATA[[recovery mode] Иммиграция вместе с Крымом в Россию]]&gt;&lt;/title&gt;
+    &lt;guid isPermaLink="true"&gt;https://habrahabr.ru/post/317714/&lt;/guid&gt;
+    &lt;link&gt;https://habrahabr.ru/post/317714/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts&lt;/link&gt;
+    &lt;description&gt;&lt;![CDATA[Увлекшись чтением иммиграций на Хабре, решил рассказать историю одного весьма неординарного переезда из одной страны в другую.&lt;br/&gt;
+&lt;br/&gt;
+&lt;h3&gt;Откуда — куда.&lt;/h3&gt;&lt;br/&gt;
+Причины иммиграции описывать не буду, точек зрения на эту тему много, оставим это за рамками статьи, а вот по поводу направления — тут все просто — из Украины в Россию. Хоть и принято писать о страхах и мыслях, которые преследуют покидающих родину, к нашей ситуации это не применимо. Не было особых страхов, не было и сильных надежд, было ощущение, что все происходящее — не реально. Осознание приходило по мере погружения в новую действительность. &lt;br/&gt;
+&lt;br/&gt;
+&lt;img src="https://habrastorage.org/getpro/habr/post_images/08e/642/75f/08e64275f4b219965168b5b256a590fe.jpg" alt="image"/&gt;&lt;br/&gt;
+ &lt;a href="https://habrahabr.ru/post/317714/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;]]&gt;&lt;/description&gt;
+    
+    &lt;pubDate&gt;Thu, 15 Dec 2016 15:01:40 GMT&lt;/pubDate&gt;
+    &lt;dc:creator&gt;Muz_Toxa&lt;/dc:creator&gt;
+    &lt;category&gt;&lt;![CDATA[IT-эмиграция]]&gt;&lt;/category&gt;
+    &lt;category&gt;&lt;![CDATA[крым]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[иммиграция]]&gt;&lt;/category&gt;
+  &lt;/item&gt;
+
+	  &lt;item&gt;
+    &lt;title&gt;&lt;![CDATA[«Мир не Дикого Запада»: IEEE опубликовала стандарт по созданию благожелательных роботов]]&gt;&lt;/title&gt;
+    &lt;guid isPermaLink="true"&gt;https://habrahabr.ru/post/316274/&lt;/guid&gt;
+    &lt;link&gt;https://habrahabr.ru/post/316274/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts&lt;/link&gt;
+    &lt;description&gt;&lt;![CDATA[По словам Мартины Ротблатт (Martine Rothblatt), предпринимателя и футуриста, человечество быстро движется к следующему эволюционному витку — к тому моменту, когда мы начнем загружать свое сознание в компьютеры. Она отмечает, что сегодня многие тратят по нескольку часов в день на переписку в социальных сетях, обмениваясь цифровой информацией, которую Мартина называет «интеллектуальными файлами».&lt;br/&gt;
+&lt;br/&gt;
+&lt;blockquote&gt;«Большие ИТ-компании вливают миллиарды долларов в разработку искусственного интеллекта, потому есть вероятность, что эти файлы будут использоваться для создания цифровых версий людей», — &lt;a href="https://www.technologyreview.com/s/531251/qa-with-futurist-martine-rothblatt/"&gt;говорит&lt;/a&gt; Ротблатт.&lt;/blockquote&gt;&lt;br/&gt;
+&lt;a href="https://habrahabr.ru/company/vasexperts/blog/316274/"&gt;&lt;img src="https://habrastorage.org/files/31b/816/973/31b816973dab4b5fbc3f09a551224864.jpg"/&gt;&lt;/a&gt; &lt;a href="https://habrahabr.ru/post/316274/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;]]&gt;&lt;/description&gt;
+    
+    &lt;pubDate&gt;Thu, 15 Dec 2016 13:48:44 GMT&lt;/pubDate&gt;
+    &lt;dc:creator&gt;VASExperts&lt;/dc:creator&gt;
+    &lt;category&gt;&lt;![CDATA[Разработка робототехники]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Разработка под e-commerce]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Блог компании VAS Experts]]&gt;&lt;/category&gt;
+    &lt;category&gt;&lt;![CDATA[westworld]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[vas experts]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[ieee]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[робототехника]]&gt;&lt;/category&gt;
+  &lt;/item&gt;
+
+	  &lt;item&gt;
+    &lt;title&gt;&lt;![CDATA[Кратко про оптимистичный UI. Оптимистичные интерфейсы в картинках]]&gt;&lt;/title&gt;
+    &lt;guid isPermaLink="true"&gt;https://habrahabr.ru/post/317664/&lt;/guid&gt;
+    &lt;link&gt;https://habrahabr.ru/post/317664/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts&lt;/link&gt;
+    &lt;description&gt;&lt;![CDATA[Не так давно на сайте Smashing Magazine появилась&lt;a href="https://www.smashingmagazine.com/2016/11/true-lies-of-optimistic-user-interfaces/"&gt; статья&lt;/a&gt; Дениса Мишунова, с переводом котрой можно ознакомиться на &lt;a href="https://habrahabr.ru/company/jugru/blog/315806/"&gt;Хабре&lt;/a&gt;. &lt;br/&gt;
+&lt;br/&gt;
+Вслед за этой статьей вышла еще одна – «&lt;a href="https://uxplanet.org/optimistic-1000-34d9eefe4c05#.dlpxcftug"&gt;Optimistic UIs in under 1000 words&lt;/a&gt;» за авторством Игоря Мандригина, в которой он затрагивает ту же тему, дополняя ее и иллюстрируя большим количеством примеров. Предлагаем вашему вниманию перевод. &lt;br/&gt;
+&lt;br/&gt;
+&lt;img src="https://habrastorage.org/files/ab3/ecf/98b/ab3ecf98ba5343a798ae7f7b5b1149fd.jpg"/&gt;&lt;br/&gt;
+ &lt;a href="https://habrahabr.ru/post/317664/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;]]&gt;&lt;/description&gt;
+    
+    &lt;pubDate&gt;Thu, 15 Dec 2016 08:20:34 GMT&lt;/pubDate&gt;
+    &lt;dc:creator&gt;EverydayTools&lt;/dc:creator&gt;
+    &lt;category&gt;&lt;![CDATA[Интерфейсы]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Дизайн мобильных приложений]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Веб-дизайн]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Usability]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Блог компании Everyday Tools]]&gt;&lt;/category&gt;
+    &lt;category&gt;&lt;![CDATA[UI]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[user experience]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[user interfaces]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[user experience design]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[оптимистичный ui]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[интерфейсы]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[переводы]]&gt;&lt;/category&gt;
+  &lt;/item&gt;
+
+	  &lt;item&gt;
+    &lt;title&gt;&lt;![CDATA[Docker, GitLab, бесплатные SSL-сертификаты и другие плюшки современной веб-разработки]]&gt;&lt;/title&gt;
+    &lt;guid isPermaLink="true"&gt;https://habrahabr.ru/post/317636/&lt;/guid&gt;
+    &lt;link&gt;https://habrahabr.ru/post/317636/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts&lt;/link&gt;
+    &lt;description&gt;&lt;![CDATA[&lt;p&gt;И снова здравствуйте! Почти пять лет уже не писал здесь новых статей, хотя, если честно, всегда знал, что рано или поздно начну это делать снова. Не знаю как вам, а мне все таки это дело всегда казалось довольно увлекательным. &lt;/p&gt;&lt;br/&gt;
+&lt;p&gt;Начинать написание нового материала после столь продолжительного отдыха от этого дела — труднее всего. Но раз цель поставлена — надо идти до конца. Начну немного издалека.&lt;/p&gt;&lt;br/&gt;
+&lt;p&gt;Всю свою сознательную жизнь основным родом моей деятельности была и остается по сей день веб-разработка. Именно поэтому, сознаюсь сразу, что данный материал стоит воспринимать именно как попытка построения Docker-кластера от системного администратора любителя, но никак не профессионала. В этой статье я не могу претендовать на экспертное мнение в кластеризации и даже, более того, сам же хочу проверить достоверность собственного опыта.&lt;/p&gt;&lt;br/&gt;
+&lt;p&gt;Под хабракатом вы найдете &lt;em&gt;Quick Start по использованию Docker&lt;/em&gt; на уровне, необходимом для решения конкретных задач, обозначенных ниже, без углубления в &amp;quot;дебри&amp;quot; виртуализации и прочих сопутствующих тем. Если вы до сих пор хотите начать успешно использовать эту современную технологию, тем самым значительно упростив целый ряд процессов: от разработки веб-продуктов и до разворачивания и переноса оных под какое-либо современное оборудование — прошу под кат!&lt;/p&gt;&lt;br/&gt;
+&lt;p&gt;&lt;img src="https://habrastorage.org/files/701/e12/715/701e127152c84347bd00745eb1927cc9.png" alt="Opening Illustration - Docker"/&gt;&lt;/p&gt; &lt;a href="https://habrahabr.ru/post/317636/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;]]&gt;&lt;/description&gt;
+    
+    &lt;pubDate&gt;Thu, 15 Dec 2016 09:31:32 GMT&lt;/pubDate&gt;
+    &lt;dc:creator&gt;Kyborg2011&lt;/dc:creator&gt;
+    &lt;category&gt;&lt;![CDATA[Системы управления версиями]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Системное программирование]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Разработка под Linux]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Разработка веб-сайтов]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Open source]]&gt;&lt;/category&gt;
+    &lt;category&gt;&lt;![CDATA[docker]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[ssl сертификаты]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[gitlab]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[centos 7]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[letsencrypt]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[certbot]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[кластеризация]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[lamp]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[lemp]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[mean]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[google cloud]]&gt;&lt;/category&gt;
+  &lt;/item&gt;
+
+	  &lt;item&gt;
+    &lt;title&gt;&lt;![CDATA[[Перевод] Эти компании переманивают специалистов в области цифровых технологий у всех остальных]]&gt;&lt;/title&gt;
+    &lt;guid isPermaLink="true"&gt;https://habrahabr.ru/post/317618/&lt;/guid&gt;
+    &lt;link&gt;https://habrahabr.ru/post/317618/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts&lt;/link&gt;
+    &lt;description&gt;&lt;![CDATA[&lt;img src="https://habrastorage.org/files/da7/0d8/818/da70d8818a9b4952a61e5c90747208cf.jpg"/&gt;&lt;br/&gt;
+&lt;br/&gt;
+&lt;i&gt;Возможно, в IBM и Nike очень хорошо работается, но они вынуждены вести утомительную войну за кадры в области цифровых технологий, в которой не всегда удается победить даже Google.&lt;/i&gt; &lt;a href="https://habrahabr.ru/post/317618/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;]]&gt;&lt;/description&gt;
+    
+    &lt;pubDate&gt;Thu, 15 Dec 2016 08:45:32 GMT&lt;/pubDate&gt;
+    &lt;dc:creator&gt;os7&lt;/dc:creator&gt;
+    &lt;category&gt;&lt;![CDATA[Управление персоналом]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Карьера в IT-индустрии]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Блог компании TESTutor]]&gt;&lt;/category&gt;
+    &lt;category&gt;head hunting&lt;/category&gt;&lt;category&gt;переманивание персонала&lt;/category&gt;&lt;category&gt;human resources&lt;/category&gt;&lt;category&gt;hr-процесс&lt;/category&gt;&lt;category&gt;hr-brand&lt;/category&gt;&lt;category&gt;hr-бренд&lt;/category&gt;&lt;category&gt;эйчар&lt;/category&gt;&lt;category&gt;подбор персонала&lt;/category&gt;&lt;category&gt;человеческие ресурсы&lt;/category&gt;&lt;category&gt;цифровые технологии&lt;/category&gt;
+  &lt;/item&gt;
+
+	  &lt;item&gt;
+    &lt;title&gt;&lt;![CDATA[[Перевод] Отладка вашей ОС: урок по выделению памяти]]&gt;&lt;/title&gt;
+    &lt;guid isPermaLink="true"&gt;https://habrahabr.ru/post/317476/&lt;/guid&gt;
+    &lt;link&gt;https://habrahabr.ru/post/317476/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts&lt;/link&gt;
+    &lt;description&gt;&lt;![CDATA[&lt;div style="text-align:center;"&gt;&lt;img src="https://habrastorage.org/files/81f/627/120/81f627120ada4d2d8830722074599a71.jpg" /&gt;&lt;/div&gt;&lt;br/&gt;
+Всё началось, как и многие другие расследования, с &lt;a href="https://github.com/kennethreitz/requests/issues/3729"&gt;баг-репорта&lt;/a&gt;.&lt;br/&gt;
+&lt;br/&gt;
+Название отчёта было довольно простым: «При HTTP-подключении iter_content медленно работает с чанками большого размера». Подобное название немедленно включило у меня в голове сирену по двум причинам. Во-первых, довольно сложно определить, что здесь означает «медленно»? Насколько медленно? Насколько велик «большой размер»? Во-вторых, если бы описанное проявлялось действительно серьёзно, то мы бы об этом уже знали. Метод &lt;code&gt;iter_content&lt;/code&gt; используется давно, и если бы он существенно притормаживал в распространённом пользовательском режиме, то мимо нас такая информация не прошла бы.&lt;br/&gt;
+ &lt;a href="https://habrahabr.ru/post/317476/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;]]&gt;&lt;/description&gt;
+    
+    &lt;pubDate&gt;Thu, 15 Dec 2016 09:10:45 GMT&lt;/pubDate&gt;
+    &lt;dc:creator&gt;AloneCoder&lt;/dc:creator&gt;
+    &lt;category&gt;&lt;![CDATA[Отладка]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Компиляторы]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Python]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[C]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Блог компании Mail.Ru Group]]&gt;&lt;/category&gt;
+    &lt;category&gt;c&lt;/category&gt;&lt;category&gt;выделение памяти&lt;/category&gt;&lt;category&gt;отладка&lt;/category&gt;&lt;category&gt;никто не читает теги&lt;/category&gt;
+  &lt;/item&gt;
+
+	  &lt;item&gt;
+    &lt;title&gt;&lt;![CDATA[Яндекс использовал нейросеть и научился прогнозировать осадки с точностью до минут]]&gt;&lt;/title&gt;
+    &lt;guid isPermaLink="true"&gt;https://habrahabr.ru/post/317626/&lt;/guid&gt;
+    &lt;link&gt;https://habrahabr.ru/post/317626/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts&lt;/link&gt;
+    &lt;description&gt;&lt;![CDATA[Сегодня я вновь хотел бы поговорить с вами о погоде. Вновь — потому что почти год назад мы уже о ней &lt;a href="https://habrahabr.ru/company/yandex/blog/271725/"&gt;разговаривали&lt;/a&gt;: я рассказал про нашу технологию построения прогнозов Метеум, основанную на метеомоделировании и машинном обучении. Теперь я хочу поговорить не о той погоде, которая будет завтра, на следующей неделе или в новогоднюю ночь, — а о той, которая уже установилась за окном, и о той, которая наступит в ближайшие несколько часов.&lt;br/&gt;
+&lt;br/&gt;
+&lt;img src="https://habrastorage.org/files/191/df6/ff2/191df6ff296b4fbb94951ad4f06654f7.png"/&gt;&lt;br/&gt;
+ &lt;br/&gt;
+Под катом я расскажу о том, что такое наукастинг и как мы над ним работали.&lt;br/&gt;
+ &lt;a href="https://habrahabr.ru/post/317626/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;]]&gt;&lt;/description&gt;
+    
+    &lt;pubDate&gt;Thu, 15 Dec 2016 07:55:16 GMT&lt;/pubDate&gt;
+    &lt;dc:creator&gt;imalion&lt;/dc:creator&gt;
+    &lt;category&gt;&lt;![CDATA[Машинное обучение]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Математика]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Алгоритмы]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Блог компании Яндекс]]&gt;&lt;/category&gt;
+    &lt;category&gt;&lt;![CDATA[погода]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[нейронные сети]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[сверточные нейронные сети]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[яндекс.погода]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[прогнозирование]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[радарные системы]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[осадки]]&gt;&lt;/category&gt;
+  &lt;/item&gt;
+
+	  &lt;item&gt;
+    &lt;title&gt;&lt;![CDATA[Помнить всё: метод римской комнаты]]&gt;&lt;/title&gt;
+    &lt;guid isPermaLink="true"&gt;https://habrahabr.ru/post/317464/&lt;/guid&gt;
+    &lt;link&gt;https://habrahabr.ru/post/317464/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts&lt;/link&gt;
+    &lt;description&gt;&lt;![CDATA[«Записывайте всё!» — говорит гуру GTD Дэвид Аллен. Создайте систему для записи, которой всецело доверяете, и — записывайте всё!&lt;br/&gt;
+&lt;br/&gt;
+Совет прекрасный, но не всегда есть под рукой система, которой я доверяю. И не всегда я ей доверяю. Бывают ситуации, когда ни записать, ни прочитать записанное невозможно. На пробежке, например. На грани сна. В бане. Во время шторма на палубе каравеллы.&lt;br/&gt;
+&lt;br/&gt;
+В конце концов, эту чудесную систему можно где-то потерять.&lt;br/&gt;
+&lt;br/&gt;
+В таких случаях всё-таки придётся использовать голову, но не загружая её. И лучший из известных мне способов это сделать — метод римской комнаты. Также его называют дворец памяти или дорога Цицерона.&lt;br/&gt;
+&lt;br/&gt;
+&lt;img src="https://habrastorage.org/files/c12/21d/4c7/c1221d4c71eb434a9972aba75f42e1a4.jpg"/&gt;&lt;br/&gt;
+&lt;br/&gt;
+ &lt;a href="https://habrahabr.ru/post/317464/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;]]&gt;&lt;/description&gt;
+    
+    &lt;pubDate&gt;Thu, 15 Dec 2016 05:53:52 GMT&lt;/pubDate&gt;
+    &lt;dc:creator&gt;Akarosa&lt;/dc:creator&gt;
+    &lt;category&gt;&lt;![CDATA[GTD]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Блог компании SmartProgress]]&gt;&lt;/category&gt;
+    &lt;category&gt;&lt;![CDATA[память человека]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[самоорганизация]]&gt;&lt;/category&gt;
+  &lt;/item&gt;
+
+	  &lt;item&gt;
+    &lt;title&gt;&lt;![CDATA[[Перевод] Собственная платформа. Часть 0.2 Теория. Интерпретатор CHIP8]]&gt;&lt;/title&gt;
+    &lt;guid isPermaLink="true"&gt;https://habrahabr.ru/post/316788/&lt;/guid&gt;
+    &lt;link&gt;https://habrahabr.ru/post/316788/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts&lt;/link&gt;
+    &lt;description&gt;&lt;![CDATA[&lt;h1 id="vvedenie"&gt;Введение&lt;/h1&gt;&lt;br/&gt;
+&lt;p&gt;Здравствуй, мир! Сегодня у нас перевод &lt;a href="http://mattmik.com/files/chip8/mastering/chip8.html"&gt;спецификации&lt;/a&gt; языка CHIP8. Это статья содержит только теоретическую часть.&lt;/p&gt;&lt;br/&gt;
+&lt;div class="spoiler"&gt;&lt;b class="spoiler_title"&gt;*COSMAC ELF во всей красе*&lt;/b&gt;&lt;div class="spoiler_text"&gt;&lt;p&gt;&lt;img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/COSMAC_ELF_CHM.jpg" alt="COSMAC ELF"/&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;br/&gt;
+&lt;h1 id="chto-takoe-chip8"&gt;Что такое CHIP8?&lt;/h1&gt;&lt;br/&gt;
+&lt;p&gt;CHIP8 это интерпретируемый язык программирования, который был разработан Джозефом Вейзбекером (прим. перевод Joseph Weisbecker) в семидесятых для использования в &lt;a href="https://ru.wikipedia.org/wiki/COSMAC_VIP"&gt;RCA COSMAC VIP&lt;/a&gt;. В дальнейшем был использован в &lt;a href="https://en.wikipedia.org/wiki/COSMAC_ELF"&gt;COSMAC ELF&lt;/a&gt;, &lt;a href="https://en.wikipedia.org/wiki/Telmac_1800"&gt;Telmac 1800&lt;/a&gt;, ETI 660, DREAM 6800. Тридцать одна (35?) инструкция давали возможности для вывода простого звука, монохромной графики в разрешении 64 на 32 пикселя, а также позволяло использовать 16 пользовательских кнопок. Сегодня CHIP-8 часто используется для обучения базовым навыком эмуляции (не интерпретации). Интерпретаторы CHIP-8, часто по ошибке называемые „эмуляторами“, существуют на все более расширяющемся множестве платформ. Это обилие интерпретаторов связано со сходством дизайна интерпретатора CHIP-8 и эмулятора системы. Те, кто хочет разобраться в эмуляторах, нередко начинают с написания интерпретатора CHIP-8.&lt;/p&gt;&lt;br/&gt;
+ &lt;a href="https://habrahabr.ru/post/316788/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;]]&gt;&lt;/description&gt;
+    
+    &lt;pubDate&gt;Wed, 14 Dec 2016 19:48:55 GMT&lt;/pubDate&gt;
+    &lt;dc:creator&gt;Armleo&lt;/dc:creator&gt;
+    &lt;category&gt;&lt;![CDATA[Программирование микроконтроллеров]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Ненормальное программирование]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Компиляторы]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Assembler]]&gt;&lt;/category&gt;
+    &lt;category&gt;chip-8&lt;/category&gt;&lt;category&gt;interpreter&lt;/category&gt;&lt;category&gt;emulator&lt;/category&gt;&lt;category&gt;emulation&lt;/category&gt;&lt;category&gt;интерпретатор&lt;/category&gt;&lt;category&gt;эмулятор&lt;/category&gt;&lt;category&gt;эмуляция&lt;/category&gt;
+  &lt;/item&gt;
+
+	  &lt;item&gt;
+    &lt;title&gt;&lt;![CDATA[Как мы решили проблему родительских комитетов и заработали миллион рублей]]&gt;&lt;/title&gt;
+    &lt;guid isPermaLink="true"&gt;https://habrahabr.ru/post/317648/&lt;/guid&gt;
+    &lt;link&gt;https://habrahabr.ru/post/317648/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts&lt;/link&gt;
+    &lt;description&gt;&lt;![CDATA[&lt;a href="https://habrahabr.ru/company/gtv/blog/317648/"&gt;&lt;img src="https://habrastorage.org/files/dcf/c0a/645/dcfc0a645f8d4e6d92650f402d42bd99.jpg"/&gt;&lt;/a&gt;&lt;br/&gt;
+Если вы читали мои посты про то, как развивается проект «Простая Наука», то значит уже слышали о серии наборов «&lt;a href="https://shop.simplescience.ru/collection/experiment-in-box?utm_source=Habrahabr&amp;amp;utm_medium=rodkomitet&amp;amp;utm_campaign=15dec2016"&gt;Эксперименты в коробочке&lt;/a&gt;». Сегодня я расскажу, как мы собрали эти наборы в комплекты по 25 штук и увеличили объем продаж более чем на &lt;b&gt;один миллион рублей&lt;/b&gt; за счет родительских комитетов в школах и детских садах.&lt;br/&gt;
+&lt;br/&gt;
+Итак, родительские комитеты. Кто это? &lt;a href="https://habrahabr.ru/post/317648/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;]]&gt;&lt;/description&gt;
+    
+    &lt;pubDate&gt;Thu, 15 Dec 2016 00:13:23 GMT&lt;/pubDate&gt;
+    &lt;dc:creator&gt;Bredun&lt;/dc:creator&gt;
+    &lt;category&gt;&lt;![CDATA[Управление продуктом]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Управление продажами]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Развитие стартапа]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Бизнес-модели]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Блог компании Простая Наука]]&gt;&lt;/category&gt;
+    &lt;category&gt;&lt;![CDATA[простая наука]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[родительский комитет]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[школа]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[эксперименты]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[опыты]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[наборы для детей]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[подарки на любые праздники]]&gt;&lt;/category&gt;
+  &lt;/item&gt;
+
+	  &lt;item&gt;
+    &lt;title&gt;&lt;![CDATA[Консоль в массы. Переход на светлую сторону. Часть первая]]&gt;&lt;/title&gt;
+    &lt;guid isPermaLink="true"&gt;https://habrahabr.ru/post/317534/&lt;/guid&gt;
+    &lt;link&gt;https://habrahabr.ru/post/317534/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts&lt;/link&gt;
+    &lt;description&gt;&lt;![CDATA[&lt;img src="https://habrastorage.org/files/921/24b/f20/92124bf201f54cd2b00fb1e93ff547d1.jpg"/&gt;&lt;br/&gt;
+&lt;br/&gt;
+&lt;h2&gt;Вступление&lt;/h2&gt;&lt;br/&gt;
+Всем привет! Данная серия статей — это текстовый вариант моего доклада на &lt;a href="https://wsd.events/2016/11/26/"&gt;WSD в Киеве 26 ноября&lt;/a&gt;. Решил написать, чтобы дать более развернутое описание темам, которые были затронуты, а некоторые моменты уточнить. Кроме того, есть возможность рассмотреть больше примеров, услышать мнение от тебя, уважаемый читатель. И, конечно же, поделиться информацией с более широкой аудиторией.&lt;br/&gt;
+ &lt;a href="https://habrahabr.ru/post/317534/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;]]&gt;&lt;/description&gt;
+    
+    &lt;pubDate&gt;Wed, 14 Dec 2016 10:00:50 GMT&lt;/pubDate&gt;
+    &lt;dc:creator&gt;var_bin&lt;/dc:creator&gt;
+    &lt;category&gt;&lt;![CDATA[Совершенный код]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Системное программирование]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Разработка веб-сайтов]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Отладка]]&gt;&lt;/category&gt;
+    &lt;category&gt;&lt;![CDATA[bash]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[screen]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[tmux]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[wsd]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[front-end разработка]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[terminal]]&gt;&lt;/category&gt;
+  &lt;/item&gt;
+
+	  &lt;item&gt;
+    &lt;title&gt;&lt;![CDATA[Очередная история про миграцию в ЕС]]&gt;&lt;/title&gt;
+    &lt;guid isPermaLink="true"&gt;https://habrahabr.ru/post/317654/&lt;/guid&gt;
+    &lt;link&gt;https://habrahabr.ru/post/317654/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts&lt;/link&gt;
+    &lt;description&gt;&lt;![CDATA[&lt;img src="https://habrastorage.org/files/a5a/d0c/564/a5ad0c56475044a1ab94c0882c0f2498.jpg"/&gt;&lt;br/&gt;
+&lt;br/&gt;
+Приветствую, дорогой читатель. В последнее время все чаще наблюдаю на Хабре истории об успешной миграции в ЕС (и даже &lt;a href="https://habrahabr.ru/post/317556/"&gt;одну&lt;/a&gt; в Россию). Раз такой тренд, хотелось бы поведать тебе свою историю. Я постараюсь опустить все эмоциональные составляющие, напротив — постараюсь дать максимально полезную информацию, которая возможно пригодится.&lt;br/&gt;
+&lt;br/&gt;
+Прежде чем идти под кат, две ремарки:&lt;br/&gt;
+&lt;br/&gt;
+&lt;ol&gt;
+&lt;li&gt;Эта история про системного инженера. Я не уверен, что разработчику будет полезно.&lt;/li&gt;
+&lt;li&gt;Если тебе надоели истории про карьеру, то не трать свое время, на Хабре есть более интересные посты.&lt;/li&gt;
+&lt;/ol&gt; &lt;a href="https://habrahabr.ru/post/317654/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts#habracut"&gt;Интересно?&lt;/a&gt;]]&gt;&lt;/description&gt;
+    
+    &lt;pubDate&gt;Wed, 14 Dec 2016 23:18:48 GMT&lt;/pubDate&gt;
+    &lt;dc:creator&gt;v_sadist&lt;/dc:creator&gt;
+    &lt;category&gt;&lt;![CDATA[IT-эмиграция]]&gt;&lt;/category&gt;
+    &lt;category&gt;&lt;![CDATA[иммиграция]]&gt;&lt;/category&gt;
+  &lt;/item&gt;
+
+	  &lt;item&gt;
+    &lt;title&gt;&lt;![CDATA[Как хорошо подать результаты качественного исследования: метод тематических сетей (+ анализ ATS в качестве примера)]]&gt;&lt;/title&gt;
+    &lt;guid isPermaLink="true"&gt;https://habrahabr.ru/post/317544/&lt;/guid&gt;
+    &lt;link&gt;https://habrahabr.ru/post/317544/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts&lt;/link&gt;
+    &lt;description&gt;&lt;![CDATA[&lt;img src="https://habrastorage.org/files/80d/327/77e/80d32777e58d485d92711c3f611f386b.jpg"/&gt;&lt;br/&gt;
+&lt;br/&gt;
+Большинство статей и выступлений про качественные исследования посвящены методам сбора информации. Но очарование качественных методов в маркетинговых и UX-исследованиях исчезает на этапе анализа и представления результатов. Эту непростую задачу исследователи решают по-разному. Иногда ради быстрого результата, или по незнанию они нарушают методологию качественных исследований, отчего работа выглядит непрофессионально и не вызывает доверия.&lt;br/&gt;
+&lt;br/&gt;
+В статье рассмотрим один из методов качественного анализа – Метод тематических сетей: &lt;br/&gt;
+&lt;blockquote&gt; — обсудим частые ошибки качественных исследований и вспомним «кальсонных гномов»;&lt;br/&gt;
+ — разберем пошаговый алгоритм метода и его возможные ловушки;&lt;br/&gt;
+ — применим метод к анализу ИТ-продукта и нарисуем тематическую карту.&lt;/blockquote&gt;Статья будет интересна:&lt;blockquote&gt; — исследователям;&lt;br/&gt;
+ — менеджерам продуктов и маркетологам;&lt;br/&gt;
+ — тем, кто использует в работе результаты исследований;&lt;br/&gt;
+ — тем, кто давно искал удобный метод структурирования нецифровой информации.&lt;/blockquote&gt; &lt;a href="https://habrahabr.ru/post/317544/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;]]&gt;&lt;/description&gt;
+    
+    &lt;pubDate&gt;Wed, 14 Dec 2016 10:25:35 GMT&lt;/pubDate&gt;
+    &lt;dc:creator&gt;TamaraK&lt;/dc:creator&gt;
+    &lt;category&gt;&lt;![CDATA[Прототипирование]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Интерфейсы]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Usability]]&gt;&lt;/category&gt;
+    &lt;category&gt;&lt;![CDATA[Качественные методы]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[качественные исследования]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[качественный анализ]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[исследование пользователей]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[оценка сотрудников]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[опрос]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[survey]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[метод тематических сетей]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[маркетинг]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[маркетинг игр]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[маркетинг приложений]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[UX]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[обратная связь]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[research]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[исследования]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[аналитика]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[социологические исследования]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[продуктовый дизайн]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[ATS]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[ERP]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[анализ данных]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[автоматизация рекрутинга]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[автоматизация бизнеса]]&gt;&lt;/category&gt;
+  &lt;/item&gt;
+
+	  &lt;item&gt;
+    &lt;title&gt;&lt;![CDATA[[Из песочницы] Связь многие ко многим и upsert в Ecto 2.1]]&gt;&lt;/title&gt;
+    &lt;guid isPermaLink="true"&gt;https://habrahabr.ru/post/317602/&lt;/guid&gt;
+    &lt;link&gt;https://habrahabr.ru/post/317602/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts&lt;/link&gt;
+    &lt;description&gt;&lt;![CDATA[&lt;div style="text-align:center;"&gt;&lt;img src="http://aserafin.pl/public/images/yes_we_can.jpg" /&gt;&lt;/div&gt;&lt;br/&gt;
+&lt;p&gt;В предыдущей главе мы говорили о many_to_many ассоциациях и как маппить внешние данные в ассоциированные сущности с помощью &lt;code&gt;Ecto.Changeset.cast_assoc/3&lt;/code&gt;. Тогда мы были вынуждены следовать правилам, накладываемыми функцией &lt;code&gt;cast_assoc/3&lt;/code&gt;, но делать это не всегда возможно или желательно.&lt;/p&gt;&lt;br/&gt;
+&lt;p&gt;В этой главе мы рассмотрим &lt;code&gt;Ecto.Changeset.put_assoc/4&lt;/code&gt; в сравнении с &lt;code&gt;cast_assoc/3&lt;/code&gt; и разберем несколько примеров. Также мы взглянем на функцию upsert, которые появятся в Ecto 2.1.&lt;/p&gt;&lt;br/&gt;
+ &lt;a href="https://habrahabr.ru/post/317602/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;]]&gt;&lt;/description&gt;
+    
+    &lt;pubDate&gt;Wed, 14 Dec 2016 13:27:28 GMT&lt;/pubDate&gt;
+    &lt;dc:creator&gt;Xiting&lt;/dc:creator&gt;
+    &lt;category&gt;&lt;![CDATA[Разработка веб-сайтов]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Erlang/OTP]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Elixir/Phoenix]]&gt;&lt;/category&gt;
+    &lt;category&gt;elixir&lt;/category&gt;&lt;category&gt;ecto&lt;/category&gt;&lt;category&gt;phoenix&lt;/category&gt;&lt;category&gt;upsert&lt;/category&gt;
+  &lt;/item&gt;
+
+	  &lt;item&gt;
+    &lt;title&gt;&lt;![CDATA[Как случайно войти в 15 лучших IT проектов для бизнеса]]&gt;&lt;/title&gt;
+    &lt;guid isPermaLink="true"&gt;https://habrahabr.ru/post/317538/&lt;/guid&gt;
+    &lt;link&gt;https://habrahabr.ru/post/317538/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts&lt;/link&gt;
+    &lt;description&gt;&lt;![CDATA[Два года мы занимаемся своим сайд проектом для улучшения эффективности телемаркетинга. Четыре раза мы заявлялись на разные конкурсы, но не проходили даже в шорт-лист. Один раз не прошли в акселератор. Два раза отказывали фонды. Правда, один раз крутой эксперт сказал, что мы правильно оцениваем рынок, но денег он пока не даст. &lt;br/&gt;
+&lt;br/&gt;
+&lt;img src="https://habrastorage.org/files/2eb/12d/027/2eb12d02729242489a843712b6b11bc4.jpg"/&gt;&lt;br/&gt;
+ &lt;a href="https://habrahabr.ru/post/317538/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;]]&gt;&lt;/description&gt;
+    
+    &lt;pubDate&gt;Wed, 14 Dec 2016 07:25:30 GMT&lt;/pubDate&gt;
+    &lt;dc:creator&gt;Beatle&lt;/dc:creator&gt;
+    &lt;category&gt;&lt;![CDATA[Управление продажами]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Развитие стартапа]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Блог компании КоллХелпер — конструктор скриптов продаж]]&gt;&lt;/category&gt;
+    &lt;category&gt;&lt;![CDATA[телефонные скрипты]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[скрипты продаж]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Цифровые вершины]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[КоллХелпер]]&gt;&lt;/category&gt;
+  &lt;/item&gt;
+
+	  &lt;item&gt;
+    &lt;title&gt;&lt;![CDATA[Как работают ИТ-специалисты. Константин Осипов, разработчик и основатель проекта Tarantool]]&gt;&lt;/title&gt;
+    &lt;guid isPermaLink="true"&gt;https://habrahabr.ru/post/317584/&lt;/guid&gt;
+    &lt;link&gt;https://habrahabr.ru/post/317584/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts&lt;/link&gt;
+    &lt;description&gt;&lt;![CDATA[&lt;img src="https://habrastorage.org/files/dff/c87/4a1/dffc874a14fe4c7d953fd4cbbc7d3bb2.jpg" alt="image" width="550"/&gt;&lt;br/&gt;
+&lt;br/&gt;
+Мы продолжаем расспрашивать специалистов о режиме труда и отдыха, профессиональных привычках, об инструментарии, который они используют, и многом другом. &lt;br/&gt;
+&lt;br/&gt;
+Будет интересно выяснить, что их объединяет, в чем они противоречат другу другу. Возможно, их ответы помогут выявить какие-то общие закономерности, полезные советы, которые помогут многим из нас.&lt;br/&gt;
+&lt;br/&gt;
+Сегодня наш гость — Константин Осипов, разработчик, основатель и руководитель проекта Tarantool. Константин рассказал, как ему удается совмещать пост разработчика ПО с должностью менеджера. Он также поделился своим списком литературы. &lt;a href="https://habrahabr.ru/post/317584/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;]]&gt;&lt;/description&gt;
+    
+    &lt;pubDate&gt;Wed, 14 Dec 2016 09:55:35 GMT&lt;/pubDate&gt;
+    &lt;dc:creator&gt;semen_grinshtein&lt;/dc:creator&gt;
+    &lt;category&gt;&lt;![CDATA[Управление разработкой]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Карьера в IT-индустрии]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[GTD]]&gt;&lt;/category&gt;
+    &lt;category&gt;&lt;![CDATA[интервью с разработчиками]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[советы начинающим]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[лайфхак]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[привычки]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[организация работы]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[базы данных]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[tarantool]]&gt;&lt;/category&gt;
+  &lt;/item&gt;
+
+	  &lt;item&gt;
+    &lt;title&gt;&lt;![CDATA[Сравнение трекинговых систем Affise, HasOffers и FuseClick]]&gt;&lt;/title&gt;
+    &lt;guid isPermaLink="true"&gt;https://habrahabr.ru/post/317496/&lt;/guid&gt;
+    &lt;link&gt;https://habrahabr.ru/post/317496/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts&lt;/link&gt;
+    &lt;description&gt;&lt;![CDATA[На рынке мобильного маркетинга представлено немало трекинговых систем. И если, говоря о клиенте, мы сразу думаем о таких гигантах, как AppsFlyer, Adjust, MAT и т.д, то говоря о трекерах для рекламных агентств, мы подразумеваем немного другие системы: HasOffers, FuseСlick, Affise, Cake и пр.&lt;br/&gt;
+&lt;br/&gt;
+&lt;img src="https://habrastorage.org/files/682/191/115/6821911152e34151b484157b6ce15771.jpg"/&gt;&lt;br/&gt;
+&lt;br/&gt;
+В &lt;a href="http://mobio.ru/?utm_source=habrahabr&amp;amp;utm_medium=article&amp;amp;utm_campaign=comparesystem"&gt;Mobio&lt;/a&gt; мы проработали с тремя из упомянутых выше систем: HasOffers, FuseClick и Affise. На определенном этапе развития компании каждая из них нам пригодилась. Однако всегда присутствовали вещи, которые было бы неплохо переработать. В статье пойдет речь о плюсах и минусах этих систем. &lt;br/&gt;
+ &lt;a href="https://habrahabr.ru/post/317496/?utm_source=habrahabr&amp;amp;utm_medium=rss&amp;amp;utm_campaign=feed_posts#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;]]&gt;&lt;/description&gt;
+    
+    &lt;pubDate&gt;Wed, 14 Dec 2016 12:05:23 GMT&lt;/pubDate&gt;
+    &lt;dc:creator&gt;Virtus_in_medio&lt;/dc:creator&gt;
+    &lt;category&gt;&lt;![CDATA[Повышение конверсии]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Интернет-маркетинг]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Аналитика мобильных приложений]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[Блог компании Mobio]]&gt;&lt;/category&gt;
+    &lt;category&gt;&lt;![CDATA[hasoffers]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[fuseclick]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[affise]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[mobio]]&gt;&lt;/category&gt;&lt;category&gt;&lt;![CDATA[tracking systems]]&gt;&lt;/category&gt;
+  &lt;/item&gt;
+
+
+
+&lt;/channel&gt;
+&lt;/rss&gt;</value>
+  </data>
+  <data name="RSSYandex" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;rss version="2.0"&gt;
+  &lt;channel&gt;
+    &lt;title&gt;Яндекс.Новости: Игры&lt;/title&gt;
+    &lt;link&gt;https://news.yandex.ru/games.html&lt;/link&gt;
+    &lt;description&gt;
+      Первая в России служба автоматической обработки и систематизации новостей. Сообщения ведущих российских и мировых СМИ. Обновление в режиме реального времени 24 часа в сутки.
+    &lt;/description&gt;
+    &lt;image&gt;
+      &lt;url&gt;https://company.yandex.ru/i/50x23.gif&lt;/url&gt;
+      &lt;link&gt;https://news.yandex.ru/games.html&lt;/link&gt;
+      &lt;title&gt;Яндекс.Новости: Игры&lt;/title&gt;
+    &lt;/image&gt;
+    &lt;lastBuildDate&gt;15 Dec 2016 23:16:36 +0300&lt;/lastBuildDate&gt;
+    &lt;item&gt;
+      &lt;title&gt;Игра Tom Clancy’s The Division стала бесплатной до 18 декабря&lt;/title&gt;
+      &lt;link&gt;https://news.yandex.ru/yandsearch?cl4url=itndaily.ru%2F2016%2F12%2F15%2Figra-tom-clancy-s-the-division-stala-besplatnoj-do-18-dekabrya%2F&lt;/link&gt;
+      &lt;description&gt;С сегодняшнего дня (начало в 21-00 по Москве) в один из лучших проектов 2016 года можно играть бесплатно. Акция продлится до 18 декабря включительно.&lt;/description&gt;
+      &lt;pubDate&gt;15 Dec 2016 18:02:30 +0300&lt;/pubDate&gt;
+      &lt;guid&gt;https://news.yandex.ru/yandsearch?cl4url=itndaily.ru%2F2016%2F12%2F15%2Figra-tom-clancy-s-the-division-stala-besplatnoj-do-18-dekabrya%2F&lt;/guid&gt;
+    &lt;/item&gt;
+    &lt;item&gt;
+      &lt;title&gt;В Китае приняли закон о регулировании деятельности стримеров&lt;/title&gt;
+      &lt;link&gt;https://news.yandex.ru/yandsearch?cl4url=www.sovsport.ru%2Fnews%2Ftext-item%2F946704&lt;/link&gt;
+      &lt;description&gt;Министерство культуры Китая приняло закон о регулировании деятельности стимеров. С 1 января 2017 года китайские пользователи смогут стримить только одобренные игры, а стриминговым площадкам теперь необходимо получить специальную лицензию и следовать установленным правилам.&lt;/description&gt;
+      &lt;pubDate&gt;15 Dec 2016 16:31:46 +0300&lt;/pubDate&gt;
+      &lt;guid&gt;https://news.yandex.ru/yandsearch?cl4url=www.sovsport.ru%2Fnews%2Ftext-item%2F946704&lt;/guid&gt;
+    &lt;/item&gt;
+    &lt;item&gt;
+      &lt;title&gt;В Battlefield 1 появился режим для фанатов ближнего боя&lt;/title&gt;
+      &lt;link&gt;https://news.yandex.ru/yandsearch?cl4url=gmbox.ru%2Fmaterials%2F27840-v-battlefield-1-poyavilsya-rezhim-dlya-fanatov-blizhnego-boya&lt;/link&gt;
+      &lt;description&gt;Если вам уже успели надоесть все старые мультиплеерные режимы Battlefield 1, а недавно введённый режим наблюдателя не для вас, то у нас хорошие новости - DICE приготовили вам подарок.&lt;/description&gt;
+      &lt;pubDate&gt;15 Dec 2016 22:31:32 +0300&lt;/pubDate&gt;
+      &lt;guid&gt;https://news.yandex.ru/yandsearch?cl4url=gmbox.ru%2Fmaterials%2F27840-v-battlefield-1-poyavilsya-rezhim-dlya-fanatov-blizhnego-boya&lt;/guid&gt;
+    &lt;/item&gt;
+    &lt;item&gt;
+      &lt;title&gt;The Division стала бесплатна на PC до конца недели&lt;/title&gt;
+      &lt;link&gt;https://news.yandex.ru/yandsearch?cl4url=www.3dnews.ru%2F944454&lt;/link&gt;
+      &lt;description&gt;Если вы хотели опробовать The Division, но смешанные отзывы аудитории этому препятствовали, то на этой неделе появилась возможность сделать это самостоятельно и бесплатно. С сегодняшнего дня по 18 декабря игру можно опробовать на PC, загрузив её через Uplay.&lt;/description&gt;
+      &lt;pubDate&gt;15 Dec 2016 10:21:07 +0300&lt;/pubDate&gt;
+      &lt;guid&gt;https://news.yandex.ru/yandsearch?cl4url=www.3dnews.ru%2F944454&lt;/guid&gt;
+    &lt;/item&gt;
+    &lt;item&gt;
+      &lt;title&gt;Первый полет шведского истребителя нового поколения отложен на полгода&lt;/title&gt;
+      &lt;link&gt;https://news.yandex.ru/yandsearch?cl4url=xn--b1aga5aadd.xn--p1ai%2F2016%2F240670%2F&lt;/link&gt;
+      &lt;description&gt;Новый самолет представили публике в мае этого года. Предполагалось, что испытания в воздухе начнутся летом, однако их сдвинули на конец года. Теперь, по всей видимости, истребитель нового поколения поднимется в небо только к середине 2017 года.&lt;/description&gt;
+      &lt;pubDate&gt;14 Dec 2016 14:23:16 +0300&lt;/pubDate&gt;
+      &lt;guid&gt;https://news.yandex.ru/yandsearch?cl4url=xn--b1aga5aadd.xn--p1ai%2F2016%2F240670%2F&lt;/guid&gt;
+    &lt;/item&gt;
+    &lt;item&gt;
+      &lt;title&gt;Nintendo выпустила игру Super Mario Run для iOS-устройств&lt;/title&gt;
+      &lt;link&gt;https://news.yandex.ru/yandsearch?cl4url=runews24.ru%2Ftechnology%2F15%2F12%2F2016%2F43d75c270f517dbc08b86622c54838e2&lt;/link&gt;
+      &lt;description&gt;Сегодня, 15 декабря, Super Mario Run вышла в 151 стране мира. Для устройств на основе операционной системе Android она будет выпущена позднее. Напомним, ранее сообщалось о том, что Nintendo начала разрабатывать для консоли N64 игру-аналог Minecraft.&lt;/description&gt;
+      &lt;pubDate&gt;15 Dec 2016 18:30:43 +0300&lt;/pubDate&gt;
+      &lt;guid&gt;https://news.yandex.ru/yandsearch?cl4url=runews24.ru%2Ftechnology%2F15%2F12%2F2016%2F43d75c270f517dbc08b86622c54838e2&lt;/guid&gt;
+    &lt;/item&gt;
+    &lt;item&gt;
+      &lt;title&gt;Тень над Даркуотером в новых скриншотах Call of Cthulhu&lt;/title&gt;
+      &lt;link&gt;https://news.yandex.ru/yandsearch?cl4url=www.3dnews.ru%2F944495&lt;/link&gt;
+      &lt;description&gt;Focus Home Interactive опубликовала пять новых скриншотов официальной адаптации настольной ролевой игры Call of Cthulhu от издательства Chaosium. На изображениях показаны обитатели и мрачные места острова Даркуотер, который предстоит исследовать в игре.&lt;/description&gt;
+      &lt;pubDate&gt;15 Dec 2016 18:56:47 +0300&lt;/pubDate&gt;
+      &lt;guid&gt;https://news.yandex.ru/yandsearch?cl4url=www.3dnews.ru%2F944495&lt;/guid&gt;
+    &lt;/item&gt;
+    &lt;item&gt;
+      &lt;title&gt;В сеть утекла точная дата релиза новой игры создателей The Witcher&lt;/title&gt;
+      &lt;link&gt;https://news.yandex.ru/yandsearch?cl4url=gamebomb.ru%2Fgbnews%2F18627&lt;/link&gt;
+      &lt;description&gt;В сети появилась точная дата релиза нового проекта студии CD Projekt. Если верить шведскому магазину Komplett, релиз новой игры создателей серии The Witcher состоится в сентябре 2017 года.&lt;/description&gt;
+      &lt;pubDate&gt;14 Dec 2016 17:25:00 +0300&lt;/pubDate&gt;
+      &lt;guid&gt;https://news.yandex.ru/yandsearch?cl4url=gamebomb.ru%2Fgbnews%2F18627&lt;/guid&gt;
+    &lt;/item&gt;
+    &lt;item&gt;
+      &lt;title&gt;Запись рэп-батла Оксимирона и ST заблокировали на территории России&lt;/title&gt;
+      &lt;link&gt;https://news.yandex.ru/yandsearch?cl4url=life.ru%2F947377&lt;/link&gt;
+      &lt;description&gt;На YouTube-канале Versus была заблокирована запись рэп-батла между рэперами Oxxxymiron и ST, которая стала одним из самых просматриваемых видео на канале. На момент публикации новости она собрала более 15 миллионов просмотров.&lt;/description&gt;
+      &lt;pubDate&gt;15 Dec 2016 21:44:00 +0300&lt;/pubDate&gt;
+      &lt;guid&gt;https://news.yandex.ru/yandsearch?cl4url=life.ru%2F947377&lt;/guid&gt;
+    &lt;/item&gt;
+    &lt;item&gt;
+      &lt;title&gt;Производство Shenmue III подходит к финальной стадии&lt;/title&gt;
+      &lt;link&gt;https://news.yandex.ru/yandsearch?cl4url=json.tv%2Ftech_trend_find%2Fproizvodstvo-shenmue-iii-podhodit-k-finalnoy-stadii-20161214042536&lt;/link&gt;
+      &lt;description&gt;Руководитель разработки Ю Судзуки (Yu Suzuki) порадовал фанатов Shenmue новостью о том, что производство новой части приключенческой игры подходит к финальному этапу. &amp;amp;amp; Shenmue III разрабатывается для PlayStation 4 и PC силами японских студий YS Net и Neilo, а также монакской Shibuya Productions.&lt;/description&gt;
+      &lt;pubDate&gt;14 Dec 2016 16:21:54 +0300&lt;/pubDate&gt;
+      &lt;guid&gt;https://news.yandex.ru/yandsearch?cl4url=json.tv%2Ftech_trend_find%2Fproizvodstvo-shenmue-iii-podhodit-k-finalnoy-stadii-20161214042536&lt;/guid&gt;
+    &lt;/item&gt;
+    &lt;item&gt;
+      &lt;title&gt;Watch Dogs 2 в реальности: произошла крупнейшая в истории хакерская атака&lt;/title&gt;
+      &lt;link&gt;https://news.yandex.ru/yandsearch?cl4url=gmbox.ru%2Fmaterials%2F27838-watch-dogs-2-v-realnosti-proizoshla-krupneyshaya-v-istorii-hakerskaya-ataka&lt;/link&gt;
+      &lt;description&gt;После выхода Watch Dogs 2 началась волна громких хакерских атак: не так давно мы рассказывали вам о взломе транспортной сети Сан-Франциско, а теперь появилась информация о совершении самого крупного взлома в истории.&lt;/description&gt;
+      &lt;pubDate&gt;15 Dec 2016 20:17:28 +0300&lt;/pubDate&gt;
+      &lt;guid&gt;https://news.yandex.ru/yandsearch?cl4url=gmbox.ru%2Fmaterials%2F27838-watch-dogs-2-v-realnosti-proizoshla-krupneyshaya-v-istorii-hakerskaya-ataka&lt;/guid&gt;
+    &lt;/item&gt;
+    &lt;item&gt;
+      &lt;title&gt;DOOM — создавайте и проходите новые кампании в SnapMap&lt;/title&gt;
+      &lt;link&gt;https://news.yandex.ru/yandsearch?cl4url=gamesqa.ru%2Fnews%2Fdoom-sozdavajte-i-proxodite-novye-kampanii-v-snapmap-5302%2F&lt;/link&gt;
+      &lt;description&gt;Уходящий год был продуктивным для команды DOOM SnapMap. За семь месяцев со времени выхода DOOM игроки опубликовали более 165 000 карт, созданных в этом редакторе.&lt;/description&gt;
+      &lt;pubDate&gt;15 Dec 2016 18:22:58 +0300&lt;/pubDate&gt;
+      &lt;guid&gt;https://news.yandex.ru/yandsearch?cl4url=gamesqa.ru%2Fnews%2Fdoom-sozdavajte-i-proxodite-novye-kampanii-v-snapmap-5302%2F&lt;/guid&gt;
+    &lt;/item&gt;
+    &lt;item&gt;
+      &lt;title&gt;В Steam вышла Shadows of Kurgansk из инкубатора Gaijin&lt;/title&gt;
+      &lt;link&gt;https://news.yandex.ru/yandsearch?cl4url=kanobu.ru%2Fnews%2Fvsteam-vyishla-shadows-ofkurgansk-izinkubatora-gaijin-387595%2F&lt;/link&gt;
+      &lt;description&gt;Сегодня в Steam вышла Shadows of Kurgansk — инди-игра, профинансированная в программе Gaijin inCubator. Мы уже писали о разработчике Shadow of Kurgansk, инди-студии Yadon Studio. В начале года она выпустила мобильную «выживалку» The Abandoned для iOS и Android в том же сеттинге.&lt;/description&gt;
+      &lt;pubDate&gt;15 Dec 2016 20:10:00 +0300&lt;/pubDate&gt;
+      &lt;guid&gt;https://news.yandex.ru/yandsearch?cl4url=kanobu.ru%2Fnews%2Fvsteam-vyishla-shadows-ofkurgansk-izinkubatora-gaijin-387595%2F&lt;/guid&gt;
+    &lt;/item&gt;
+    &lt;item&gt;
+      &lt;title&gt;Reebok представил новый ролик «Тренируйся как боец»&lt;/title&gt;
+      &lt;link&gt;https://news.yandex.ru/yandsearch?cl4url=www.championat.com%2Fboxing%2Fnews-2664660-reebok-predstavil-rolik-s-bojcovskoj-trenirovkoj.html&lt;/link&gt;
+      &lt;description&gt;Компания Reebok представила новый видеоролик, посвящённый линейке Reebok Combat. Reebok Combat — это экипировка, изготовленная с применением инновационных технологий специально для занятий смешанными боевыми искусствами и другими спортивными единоборствами.&lt;/description&gt;
+      &lt;pubDate&gt;15 Dec 2016 19:04:23 +0300&lt;/pubDate&gt;
+      &lt;guid&gt;https://news.yandex.ru/yandsearch?cl4url=www.championat.com%2Fboxing%2Fnews-2664660-reebok-predstavil-rolik-s-bojcovskoj-trenirovkoj.html&lt;/guid&gt;
+    &lt;/item&gt;
+    &lt;item&gt;
+      &lt;title&gt;В новом обновлении Modern Warfare: Remastered появились женщины&lt;/title&gt;
+      &lt;link&gt;https://news.yandex.ru/yandsearch?cl4url=www.vladtime.ru%2Fcomputers%2F528345&lt;/link&gt;
+      &lt;description&gt;Разработчики игры презентовали новое обновление для Modern Warfare: Remastered. Одним из подарков для игроков станут новые персонажи женского пола. Стоит отметить, что разработчики игры очень осторожно подошли к вопросу добавления в игру новых персонажей, чтобы сохранить баланс игры.&lt;/description&gt;
+      &lt;pubDate&gt;14 Dec 2016 12:20:15 +0300&lt;/pubDate&gt;
+      &lt;guid&gt;https://news.yandex.ru/yandsearch?cl4url=www.vladtime.ru%2Fcomputers%2F528345&lt;/guid&gt;
+    &lt;/item&gt;
+  &lt;/channel&gt;
+&lt;/rss&gt;</value>
+  </data>
+</root>

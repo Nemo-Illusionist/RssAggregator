@@ -4,7 +4,7 @@ using System.Linq;
 using System.Xml.Linq;
 using DAL.Entites;
 
-namespace RSSManager
+namespace RSS
 {
     public class RSSParser : IRSSParser
     {
@@ -13,15 +13,38 @@ namespace RSSManager
             if (string.IsNullOrEmpty(xml) || string.IsNullOrEmpty(urlName) || teg == null)
                 throw new ArgumentNullException();
             XElement dok = XDocument.Parse(xml).Root;
-            if (dok == null)
+            NotNull(dok);
+            dok = dok.Element(teg.Channel);
+            NotNull(dok);
+            return dok.Elements(teg.Item).Select(item => new NewsEntites
+            {
+                UrlName = urlName,
+                Title = GetTegValue(item, teg.Title),
+                Description = GetTegValue(item, teg.Description),
+                Date = DateTime.Parse(GetTegValue(item, teg.Date))
+            }).ToList();
+        }
+
+        private string GetTegValue(XElement item, string teg)
+        {
+            XElement tegElement = item.Element(teg);
+            NotNull(tegElement);
+            XNode tegNode = tegElement.FirstNode;
+            string tegValue = tegNode.ToString();
+            try
+            {
+                tegValue = ((XCData)tegNode).Value;
+            }
+            catch (InvalidCastException)
+            {
+            }
+            return tegValue;
+        }
+
+        private void NotNull(XElement element)
+        {
+            if (element == null)
                 throw new Exception("Неудалось распарсить XML");
-            return dok.Elements(teg.Item)
-                .Select(el => new NewsEntites
-                {
-                    UrlName = urlName,
-                    Title = el.Attribute(teg.Title).Value,
-                    Description = el.Attribute(teg.Description).Value,
-                }).ToList();
         }
     }
 }

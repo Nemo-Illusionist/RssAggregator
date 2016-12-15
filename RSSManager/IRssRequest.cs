@@ -1,6 +1,6 @@
-﻿namespace RSSManager
+﻿namespace RSS
 {
-    public interface IRssRequest
+    public interface IRSSRequest
     {
         string Request(string url);
     }

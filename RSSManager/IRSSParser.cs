@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using DAL.Entites;
 
-namespace RSSManager
+namespace RSS
 {
     public interface IRSSParser
     {

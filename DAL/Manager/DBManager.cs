@@ -7,7 +7,7 @@ using SQLite;
 
 namespace DAL.Manager
 {
-    public class DBManager
+    public class DBManager : IDBManager
     {
         private readonly string _dbName = Environment.CurrentDirectory + "\\RSS.sqlite";
 

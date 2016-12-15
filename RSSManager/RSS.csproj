@@ -7,8 +7,8 @@
     <ProjectGuid>{C5F2A7DC-7A16-46FA-8317-85E53CA4855C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RSSManager</RootNamespace>
-    <AssemblyName>RSSManager</AssemblyName>
+    <RootNamespace>RSS</RootNamespace>
+    <AssemblyName>RSS</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
