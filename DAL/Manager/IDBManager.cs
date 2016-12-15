@@ -10,6 +10,7 @@ namespace DAL.Manager
     {
         Task AddEntites<T>(T t);
         Task AddEntites<T>(IList<T> t);
+        Task CreateTable();
         Task<List<NewsEntites>> GetNews(Expression<Func<NewsEntites, bool>> func);
         Task<UrlEntites> GetUrl(string key);
     }

@@ -7,15 +7,19 @@ using SQLite;
 
 namespace DAL.Manager
 {
-    public class DBManager : IDBManager
+    internal class DBManager : IDBManager
     {
         private readonly SQLiteAsyncConnection _db;
 
         public DBManager()
         {
             _db = new SQLiteAsyncConnection(DBConstant.Name);
-            _db.CreateTableAsync<UrlEntites>();
-            _db.CreateTableAsync<NewsEntites>();
+        }
+
+        public async Task CreateTable()
+        {
+            await _db.CreateTableAsync<UrlEntites>();
+            await _db.CreateTableAsync<NewsEntites>();
         }
 
         public async Task<List<NewsEntites>> GetNews(Expression<Func<NewsEntites, bool>> func)
