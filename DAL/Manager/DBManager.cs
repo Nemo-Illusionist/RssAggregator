@@ -1,54 +1,73 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
-using System.Threading.Tasks;
 using DAL.Entites;
 using SQLite;
 
 namespace DAL.Manager
 {
-    internal class DBManager : IDBManager
+    public class DBManager
     {
-        private readonly SQLiteAsyncConnection _db;
+        private readonly string _dbName = Environment.CurrentDirectory + "\\RSS.sqlite";
 
-        public DBManager()
+        private SQLiteConnection _db;
+
+        public void CreateTable()
         {
-            _db = new SQLiteAsyncConnection(DBConstant.Name);
+            Injection(() => _db.CreateTable<UrlEntites>() + _db.CreateTable<NewsEntites>());
         }
 
-        public async Task CreateTable()
-        {
-            await _db.CreateTableAsync<UrlEntites>();
-            await _db.CreateTableAsync<NewsEntites>();
-        }
-
-        public async Task<List<NewsEntites>> GetNews(Expression<Func<NewsEntites, bool>> func)
+        public List<NewsEntites> GetNews(Expression<Func<NewsEntites, bool>> func)
         {
             if (func == null)
                 throw new ArgumentNullException(nameof(func));
-            return await _db.Table<NewsEntites>().Where(func).ToListAsync();
+            return Injection(() => _db.Table<NewsEntites>().Where(func).ToList());
         }
 
-        public async Task<UrlEntites> GetUrl(string key)
+        public UrlEntites GetUrl(string key)
         {
             if (string.IsNullOrEmpty(key))
                 throw new ArgumentNullException(nameof(key));
-            return await _db.Table<UrlEntites>().Where(x => x.UrlName == key).FirstAsync();
+            return Injection(() => _db.Table<UrlEntites>().First(x => x.UrlName == key));  
         }
 
-        public async Task AddEntites<T>(T t)
+        public void AddEntites<T>(T t)
         {
             if (t == null)
                 throw new ArgumentNullException(nameof(t));
-            await _db.InsertAsync(t);
+            try
+            {
+                Injection(() => _db.Insert(t));
+            }
+            catch (SQLiteException)
+            {
+                throw new Exception("попытка добавить в базу ещё один уникальный элемент");
+            }
         }
 
-        public async Task AddEntites<T>(IList<T> t)
+        public void AddEntites<T>(IList<T> t)
         {
             if (t == null)
                 throw new ArgumentNullException(nameof(t));
-            await _db.InsertAllAsync(t);
+            try
+            {
+                Injection(() => _db.InsertAll(t)); 
+            }
+            catch (SQLiteException)
+            {
+                throw new Exception("попытка добавить в базу ещё один уникальный элемент");
+            }
         }
 
+        private T Injection<T>(Func<T> func)
+        {
+            T t;
+            using (_db = new SQLiteConnection(_dbName))
+            {
+                t = func();
+            }
+            return t;
+        }
     }
 }

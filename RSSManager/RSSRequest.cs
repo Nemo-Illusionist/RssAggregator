@@ -4,7 +4,7 @@ using System.Net;
 
 namespace RSSManager
 {
-    public class RssRequest
+    public class RssRequest : IRssRequest
     {
         public string Request(string url)
         {

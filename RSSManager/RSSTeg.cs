@@ -12,5 +12,12 @@
             Title = "title";
             Description = "description";
         }
+
+        public RSSTeg(string item, string title, string description)
+        {
+            Item = item;
+            Title = title;
+            Description = description;
+        }
     }
 }
