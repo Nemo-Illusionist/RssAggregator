@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using DAL.Entites;
 using SQLite;
 
-namespace DAL
+namespace DAL.Manager
 {
     public class DBManager : IDBManager
     {
@@ -14,6 +14,8 @@ namespace DAL
         public DBManager()
         {
             _db = new SQLiteAsyncConnection(DBConstant.Name);
+            _db.CreateTableAsync<UrlEntites>();
+            _db.CreateTableAsync<NewsEntites>();
         }
 
         public async Task<List<NewsEntites>> GetNews(Expression<Func<NewsEntites, bool>> func)

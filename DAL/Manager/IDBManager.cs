@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using DAL.Entites;
 
-namespace DAL
+namespace DAL.Manager
 {
     public interface IDBManager
     {
